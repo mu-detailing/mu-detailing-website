@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M/U-Detailing | Premium Car Care</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292929;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: #aaa;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.hero {
+    min-height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #292929 0%, #080808 65%);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 9vw, 85px);
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #aaa;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 17px;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #eee;
+    color: #080808;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #aaa;
+}
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #999;
+    margin-bottom: 45px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #151515;
+    padding: 35px 20px;
+    border: 1px solid #303030;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.card p {
+    color: #999;
+    line-height: 1.6;
+}
+
+.about {
+    background: #111;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery div {
+    min-height: 180px;
+    background: linear-gradient(135deg, #303030, #111);
+    border: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    letter-spacing: 2px;
+}
+
+.contact {
+    background: #111;
+}
+
+.contact p {
+    color: #aaa;
+    margin: 20px 0;
+}
+
+.contact a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer {
+    padding: 30px 15px;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #292929;
+    font-size: 13px;
+}
+
+@media(max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    section {
+        padding: 65px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">M/U<span>-DETAILING</span></div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>MORE THAN<br><span>JUST A CLEAN.</span></h1>
+    <p>PREMIUM MOBILE CAR DETAILING</p>
+    <a class="button" href="https://wa.me/353892504604">
+        BOOK YOUR DETAIL
+    </a>
+</div>
+
+<section id="services">
+    <h2 class="section-title">OUR SERVICES</h2>
+    <p class="subtitle">Professional care. Exceptional results.</p>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Exterior Detailing</h3>
+            <p>Professional exterior cleaning to restore your vehicle's shine.</p>
+        </div>
+
+        <div class="card">
+            <h3>Interior Detailing</h3>
+            <p>Deep interior cleaning for a fresh and spotless finish.</p>
+        </div>
+
+        <div class="card">
+            <h3>Full Detail</h3>
+            <p>Complete interior and exterior detailing for your vehicle.</p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance Wash</h3>
+            <p>Keep your vehicle looking its best with regular professional care.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">ABOUT M/U</h2>
+    <p>
+        At M/U-Detailing, we believe every vehicle deserves
+        professional attention. We provide mobile car detailing
+        services, bringing quality cleaning and attention to detail
+        directly to you.
+        <br><br>
+        Our goal is simple: exceptional results, every time.
+    </p>
+</section>
+
+<section>
+    <h2 class="section-title">OUR WORK</h2>
+    <p class="subtitle">The difference is in the details.</p>
+
+    <div class="gallery">
+        <div>YOUR WORK HERE</div>
+        <div>YOUR WORK HERE</div>
+        <div>YOUR WORK HERE</div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">READY TO BOOK?</h2>
+    <p>Give your vehicle the attention it deserves.</p>
+
+    <a class="button" href="https://wa.me/353892504604">
+        BOOK THROUGH WHATSAPP
+    </a>
+
+    <p>Phone: +353 89 250 4604</p>
+
+    <p>
+        Instagram:
+        <a href="https://instagram.com/mu-detailing">
+            @M/U-Detailing
+        </a>
+    </p>
+</section>
+
+<footer>
+    © 2026 M/U-Detailing. All Rights Reserved.
+    <br><br>
+    PREMIUM MOBILE CAR DETAILING
+</footer>
+
+</body>
+</html>
